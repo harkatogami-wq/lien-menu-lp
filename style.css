@@ -187,14 +187,16 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; margin: 0; co
   margin: 44px 0; box-shadow: 0 14px 36px rgba(140,111,78,0.1);
   border: 1px solid var(--tan);
 }
-.price-card-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 28px; flex-wrap: wrap; }
-.price-amount { font-family: var(--font-serif); font-size: 2.4rem; color: var(--brown-dark); }
-.price-amount small { font-family: var(--font-sans); font-size: 1rem; color: var(--ink-soft); margin-left: 4px; }
-.price-note { color: var(--ink-soft); font-size: 0.88rem; }
+.price-amount { font-family: var(--font-serif); font-size: 1.7rem; color: var(--brown-dark); }
+.price-amount small { font-family: var(--font-sans); font-size: 0.85rem; color: var(--ink-soft); margin-left: 4px; }
+.price-note { color: var(--ink-soft); font-size: 0.85rem; margin-left: 10px; }
 .price-detail { display: grid; gap: 16px; margin: 0 0 32px; }
-.price-detail div { display: grid; grid-template-columns: 90px 1fr; gap: 16px; }
+.price-detail div { display: grid; grid-template-columns: 90px 1fr; gap: 16px; align-items: baseline; }
 .price-detail dt { color: var(--olive); font-size: 0.85rem; }
 .price-detail dd { margin: 0; font-size: 0.9rem; color: var(--ink); }
+.price-detail-price { padding-top: 12px; border-top: 1px solid var(--tan-soft); }
+.price-detail-price dt { color: var(--brown-dark); font-weight: 500; }
+.price-detail-price dd { display: flex; align-items: baseline; flex-wrap: wrap; }
 
 .present-box {
   background: var(--tan-soft); border-radius: 20px; padding: 40px; margin: 44px 0;
