@@ -4,7 +4,6 @@ const LINKS = {
   line: "https://utage-system.com/line/open/xe5Fn3q5YbF2?mtid=WSvCfRkiXhnn",  // LINE公式アカウント 友だち追加
   consult: "https://utage-system.com/p/yUTOiAhUpUHb",  // 無料相談 申込みページ（UTAGE）
   touch: "https://utage-system.com/p/1sVQbQX7JHOm",    // タッチケア予約ページ（UTAGE）
-  booking: "#",     // TODO: オンライン予約リンクに差し替え（例: STORES予約、Googleカレンダー予約など）
   instagram: "https://www.instagram.com/haruka_hagukumi_touch?igsh=ajV5ZXkzajBydjhz&igsi=ajV5ZXkzajBydjhz&utm_source=qr",
   home: "https://lien-hp-5qp.pages.dev/",
 };
