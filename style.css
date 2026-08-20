@@ -171,13 +171,27 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; margin: 0; co
 .reassure-title { font-family: var(--font-serif); font-size: 1.2rem; margin-bottom: 12px; color: var(--brown-dark); }
 .reassure-box p:last-child { opacity: 0.85; font-size: 0.92rem; margin: 0; color: var(--ink-soft); }
 
-.touch-gallery {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 0 0 44px;
+.touch-slideshow {
+  position: relative; max-width: 360px; aspect-ratio: 4/3;
+  margin: 0 auto 44px; border-radius: 20px; overflow: hidden;
+  box-shadow: 0 10px 28px rgba(140,111,78,0.14);
 }
-.touch-gallery img {
-  width: 100%; aspect-ratio: 4/3; object-fit: cover;
-  border-radius: 20px; box-shadow: 0 10px 28px rgba(140,111,78,0.12);
+.touch-slide {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 0.8s ease;
 }
+.touch-slide.is-active { opacity: 1; }
+.touch-slide img { width: 100%; height: 100%; object-fit: cover; }
+.touch-slideshow-dots {
+  position: absolute; left: 0; right: 0; bottom: 14px; z-index: 2;
+  display: flex; justify-content: center; gap: 8px;
+}
+.touch-dot {
+  width: 8px; height: 8px; border-radius: 50%; padding: 0;
+  border: none; background: rgba(255,255,255,0.55); cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.touch-dot.is-active { background: #fff; transform: scale(1.2); }
 
 .feature-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;

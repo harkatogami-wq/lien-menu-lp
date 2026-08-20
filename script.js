@@ -19,6 +19,30 @@ document.querySelectorAll("[data-link]").forEach((el) => {
   }
 });
 
+// ===== タッチケア写真スライドショー =====
+const touchSlideshow = document.getElementById("touchSlideshow");
+if (touchSlideshow) {
+  const slides = touchSlideshow.querySelectorAll(".touch-slide");
+  const dots = touchSlideshow.querySelectorAll(".touch-dot");
+  let current = 0;
+
+  const showSlide = (index) => {
+    slides[current].classList.remove("is-active");
+    dots[current].classList.remove("is-active");
+    current = index;
+    slides[current].classList.add("is-active");
+    dots[current].classList.add("is-active");
+  };
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => showSlide(index));
+  });
+
+  setInterval(() => {
+    showSlide((current + 1) % slides.length);
+  }, 4000);
+}
+
 // ===== モバイルメニュー =====
 const navToggle = document.getElementById("navToggle");
 const nav = document.getElementById("nav");
