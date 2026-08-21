@@ -259,8 +259,22 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; margin: 0; co
 }
 .compare-table thead th span { display: block; font-family: var(--font-sans); font-size: 0.72rem; color: var(--ink-soft); font-weight: 400; margin-top: 6px; }
 .compare-th-label { background: var(--tan-soft); }
-.compare-recommend { background: var(--brown); color: #fff !important; }
+.compare-recommend {
+  background: var(--brown); color: #fff !important;
+  position: relative; box-shadow: inset 0 0 0 2px var(--brown-dark);
+}
 .compare-recommend span { color: rgba(255,255,255,0.8) !important; }
+.compare-badge {
+  display: inline-block; background: #fff; color: var(--brown-dark);
+  font-family: var(--font-sans); font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.03em; padding: 3px 12px; border-radius: 999px;
+  margin-bottom: 8px;
+}
+.compare-recommend-col {
+  background: var(--tan-soft); font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--brown), inset -2px 0 0 var(--brown);
+}
+.compare-recommend-col.compare-ok { color: var(--brown-dark); }
 .compare-row-label { color: var(--olive); font-weight: 500; white-space: nowrap; }
 .compare-ok { color: var(--brown); text-align: center; font-weight: 700; }
 .compare-x { color: var(--ink-soft); text-align: center; opacity: 0.5; }
