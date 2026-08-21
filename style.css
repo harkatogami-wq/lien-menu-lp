@@ -263,7 +263,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; margin: 0; co
   background: var(--brown); color: #fff;
   position: relative; box-shadow: inset 0 0 0 2px var(--brown-dark);
 }
-.compare-recommend span { color: rgba(255,255,255,0.85); }
+.compare-table thead th.compare-recommend span { color: rgba(255,255,255,0.85); }
 .compare-badge {
   display: inline-block; background: #fff; color: var(--brown-dark) !important;
   font-family: var(--font-sans); font-size: 0.68rem; font-weight: 700;
