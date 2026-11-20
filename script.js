@@ -3,7 +3,7 @@
 const LINKS = {
   line: "https://line-harness-haruka.harka-togami.workers.dev/r/h-lien",  // LINE公式アカウント 友だち追加
   consult: "https://lien-tokuten.pages.dev/hotto",  // 無料相談 申込みページ（UTAGE）
-  single: "https://utage-system.com/p/AcKOJvX0cIdo",   // 単発サポートLP 初回限定8,000円（UTAGE）
+  single: "https://lien-single-lp.pages.dev/",   // 単発サポートLP 初回限定8,000円（Cloudflare・予約はStripe）
   touch: "https://bebima-lunch-lp.pages.dev/",    // タッチケアの申込み先＝ベビマ🧸ランチ会LP（UTAGE・2026-11-11切替。旧タッチケア予約 1sVQbQX7JHOm は消えていた）
   instagram: "https://www.instagram.com/haruka_hagukumi_touch?igsh=ajV5ZXkzajBydjhz&igsi=ajV5ZXkzajBydjhz&utm_source=qr",
   home: "https://lien-hp-5qp.pages.dev/",
